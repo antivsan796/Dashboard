@@ -1,75 +1,36 @@
-# React + TypeScript + Vite
+# Dashboard del Clima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard interactivo con React, TypeScript y MUI para consultar indicadores del clima y visualizar los datos por hora de Open-Meteo, siguiendo las guías 8 a 11 del Proyecto 03.
 
-Currently, two official plugins are available:
+- `wikitracker/`: solución oficial de la guía 6, extensión de Chrome.
+- `tubetrack/`: ejercicio de TypeScript de la guía 7.
+- `src/`: dashboard del clima de las guías 8 a 11.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Ejecutar el dashboard
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Ejecutar TubeTrack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+cd tubetrack
+npm install
+npm run dev
 ```
+
+## WikiTracker
+
+Cargar la carpeta `wikitracker` como extensión descomprimida desde `chrome://extensions`, como indica la guía 6.
+
+## Publicar el dashboard
+
+```sh
+npm run deploy
+```
+
+Sitio: https://antivsan796.github.io/Dashboard/
+
+Guías: https://dawm3.readthedocs.io/es/latest/recursos/guias_proyecto03.html
