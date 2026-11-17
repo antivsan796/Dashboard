@@ -4,16 +4,10 @@ import InputLabel from '@mui/material/InputLabel';
 import Select, { type SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 
-interface SelectorProps {
-    onOptionSelect: (option: string) => void;
-}
-
-export default function SelectorUI({ onOptionSelect }: SelectorProps) {
+export default function SelectorUI() {
     const [cityInput, setCityInput] = useState('');
     const handleChange = (event: SelectChangeEvent<string>) => {
-        const selectedValue = event.target.value;
-        setCityInput(selectedValue);
-        onOptionSelect(selectedValue);
+        setCityInput(event.target.value);
     };
     return (
         <FormControl fullWidth>
