@@ -1,6 +1,6 @@
 # Dashboard del Clima
 
-Dashboard interactivo con React, TypeScript y MUI para consultar indicadores del clima y visualizar los datos por hora de Open-Meteo, siguiendo las guías 8 a 11 del Proyecto 03, hasta la sección «¿Cómo muestro los datos por hora en la tabla y el gráfico?» y sus preguntas guía y de reflexión de la guía 11.
+Dashboard interactivo con React, TypeScript y MUI para consultar indicadores del clima y visualizar los datos por hora de Open-Meteo, siguiendo las guías 8 a 11 completas del Proyecto 03.
 
 - `wikitracker/`: solución oficial de la guía 6, extensión de Chrome.
 - `tubetrack/`: ejercicio de TypeScript de la guía 7.
